@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="button_restart">Заново</string>
+    <string name="button_quit">Выход</string>
+
+    <string name="result_crosses">Крестики</string>
+    <string name="result_circles">Нолики</string>
+    <string name="result_draw">Ничья</string>
+</resources>

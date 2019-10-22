@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="board_margins">12dp</dimen>
+
+    <dimen name="board_stroke_width">4dp</dimen>
+    <dimen name="grid_stroke_width">2dp</dimen>
+    <dimen name="game_result_padding">28dp</dimen>
+    <dimen name="button_corners">8dp</dimen>
+
+    <integer name="ouline_animation_time">500</integer>
+    <integer name="winner_animation_time">1500</integer>
+    <integer name="winner_message_appearance_time">1000</integer>
+    <integer name="winner_message_disappearance_time">300</integer>
+</resources>

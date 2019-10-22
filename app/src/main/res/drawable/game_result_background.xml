@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners android:radius="8dp" />
+    <solid android:color="#d0ffffff" />
+    <stroke android:color="@color/colorAccent" android:width="@dimen/board_margins" />
+    <padding
+        android:top="@dimen/game_result_padding"
+        android:left="@dimen/game_result_padding"
+        android:right="@dimen/game_result_padding"
+        android:bottom="@dimen/game_result_padding"
+        />
+
+</shape>

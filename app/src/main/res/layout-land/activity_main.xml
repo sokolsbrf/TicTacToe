@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/board_margins"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ru.dimasokol.game.tictactoe.TicTacToeView
+            android:id="@+id/game_board"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:boardOutlinesColor="@color/colorPrimaryDark"
+            app:boardGridColor="@color/colorPrimary"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/score_crosses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/game_result_padding"
+                android:drawableRight="@drawable/cross"
+                android:textAppearance="@style/ScoresTextAppearance"
+                android:drawablePadding="@dimen/board_margins"
+                android:gravity="center"
+                tools:text="0"
+                />
+
+            <TextView
+                android:id="@+id/score_circles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/game_result_padding"
+                android:drawableRight="@drawable/circle"
+                android:textAppearance="@style/ScoresTextAppearance"
+                android:drawablePadding="@dimen/board_margins"
+                android:gravity="center"
+                tools:text="1"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/results_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:background="@drawable/game_result_background"
+        android:layout_marginLeft="@dimen/board_margins"
+        android:layout_marginRight="@dimen/board_margins"
+        android:layout_marginTop="@dimen/game_result_padding"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        >
+
+        <TextView
+            android:id="@+id/game_result_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="@style/ResultTextAppearance"
+            android:layout_marginBottom="@dimen/game_result_padding"
+            tools:text="Крестики" />
+
+        <Button
+            android:id="@+id/button_restart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/in_game_button"
+            android:layout_marginBottom="@dimen/board_margins"
+            android:textAppearance="@style/ButtonTextAppearance"
+            android:text="@string/button_restart"
+            />
+
+        <Button
+            android:id="@+id/button_quit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/in_game_button"
+            android:textAppearance="@style/ButtonTextAppearance"
+            android:text="@string/button_quit"
+            />
+
+    </LinearLayout>
+</FrameLayout>
